@@ -1,0 +1,10 @@
+.navbar{
+    /* background: linear-gradient(to bottom, #3683c8cc, #FFFFFF); */
+    background: rgba(0, 0, 0, 0.09);
+    /* opacity: 0.3; */
+    /* z-index: -100; */
+}
+
+.container-fluid a{
+    font-size: 2.25rem;
+}

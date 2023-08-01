@@ -1,0 +1,61 @@
+.extra-details-container{
+    /* position: absolute; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* width: 400px; */
+    top: 50px;
+    width:auto;
+    height: 200px;
+    margin: auto;
+    justify-content: center;
+}
+
+body {
+    background: linear-gradient( #3683c8cc, #FFFFFF) no-repeat;
+    height: 100vh;
+}
+.extra-details{
+    /* border: 2px solid rgb(41, 121, 186); */
+    position: absolute;
+    left: 480px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #40c836cc, #cbffb3);
+    opacity: 0.9;
+    width: 170px;
+    height: 155px;
+    font-size: 20px;
+    /* justify-content: center; */   
+    align-items:flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.extra-details:hover {
+    transform: scale(1.1);
+     /* Make the card 10% larger on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover */
+  }
+h3{
+    font-size: 15px;
+}
+.weather-extra{
+    position: absolute;
+    left: 780px;
+}
+
+.weather-extra ul li{
+    list-style: none;
+}
+#feels_like{
+    white-space: pre;
+}
+.extra-details img{
+    height: 60px;
+}

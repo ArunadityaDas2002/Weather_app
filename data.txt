@@ -1,0 +1,6 @@
+feels_like
+humidity
+max_temp
+temp
+wind_degrees
+wind_speed

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="extra_details.css">
+    <!-- <link rel="stylesheet" href="day-nit.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> -->
+
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="total_container">
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Weather App</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+                <form class="d-flex" role="search">
+                  <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                </form>
+            </div>
+          </nav>
+        </nav>
+
+        <!-- DAY AND NIT -->
+              <!-- <button id="toggleButton">Toggle Mode</button> -->
+
+        <!-- CARD SLIDER -->
+        <div id="city_name"></div>
+        <div class="slider-container">
+            <div class="card-slider">
+              <div class=" card card_wind">
+                <h2 class="card-title">Wind</h2>
+                <img src="images\wind_5263188.png" alt="wind image" class="card-slider-logo">
+                <div class="card-para">
+                    <!-- WIND SPEED -->
+                    <p><div id="wind_speed"></div></p>
+                    <!-- <p class>Wind degrees:<span class="wind_degrees"></span></p> -->
+                </div>
+
+              </div>
+              <div class="card card_temp">
+                <h2 class="card-title">Temperature</h2>
+                <img src="images\jagannatha_6026434.png" alt="temp image" class="card-slider-logo">
+                <div class="card-para">
+                    <!-- TEMPERATURE -->
+                    <p><div id="temp"></div></p>
+                    <!-- <p class>Max Temp:<span class="max_temp"></span></p> -->
+                </div>
+
+              </div>
+              <div class="card card-humidity">
+                <h2 class="card-title">Humidity</h2>
+                <img src="images\humidity_5797225.png" alt="humid img" class="card-slider-logo">
+                <div class="card-para">
+                    <!-- HUMIDITY -->
+                    <p><div id="humidity"></div></p>
+                    <!-- <p class>Feels like:<span class="feels_like"></span></p> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="extra-details-container">
+          <div class="extra-details">
+            <h3>AQI</h3>
+            <img src="images\8923713.png">
+            <div id="air_quality">
+              <!-- <p>123</p> -->
+            </div>
+          </div>
+          <div class="weather-extra">
+            <ul>
+              <hr>
+              <li id="feels_like">feels_like</li>
+              <hr>
+              <li id="max_temp">max_temp</li>
+              <hr>
+              <li id="wind_degrees">wind_degrees</li>
+              <hr>
+            </ul>
+          </div>
+        </div>
+          
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
+  <script src="script.js"></script>
+  <!-- <script src="slider.js"></script> -->
+  <!-- <script src="day-night.js"></script> -->
+</html>
