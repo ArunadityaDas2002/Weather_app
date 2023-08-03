@@ -1,0 +1,134 @@
+/* body{
+    background: url("images/pexels-pixabay-268791.jpg") no-repeat center center/cover;
+}  */
+ /* style_slider.css */
+
+/* Center the cards horizontally */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html,body{
+  /* overflow: hidden; */
+  position: relative;
+}
+
+#city_name{
+  position: absolute;
+  left: 50px;
+  /* right: 50px; */
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #04187e;
+  width: 50px;
+  /* margin-left: 645px; */
+  font-family: var(--bs-font-sans-serif);
+  transform: scale(1.2);
+}
+
+.slider-container {
+  position: relative;
+  top: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 390px; /* Adjust this if you don't want the cards to cover the full viewport height */
+    width:100%;
+    margin-bottom: 0px;
+    /* margin-top: ; */
+  }
+  
+  .card-slider {
+    /* position: absolute; */
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+  
+  .card {
+    /* position: absolute; */
+    background: linear-gradient(to bottom, #36a8c8cc, #FFFFFF);
+    flex: 0 0 300px;
+    height:360px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+     /* Make the card 10% larger on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover */
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .slider-container{
+    align-items: center;
+  }
+
+  .card-slider-logo{
+    align-items: center;
+    height: 140px;
+    width: 140px;
+  }
+
+  .card-para{
+    /* text-align: left; */
+    margin: 45px;
+  }
+  .card-para{
+    /* position: absolute; */
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .card-para div{
+    /* position: absolute; */
+    width: 297px;
+    font-size: 40px;
+    color: #04187e;
+  }
+
+  #alert{
+    position: absolute;
+    top: 365px;
+    left: 392px;
+    font-size: 80px;
+    color: red;
+    background-color: black;
+    width: 751px;
+    height: 117px;
+    z-index: 50;
+    text-align: center;
+    opacity: 0.2;
+    scale: 0.5;
+  }
+
+  #loader {
+    position: absolute;
+    top: 310px;
+    left: 670px;
+    width: auto;
+    height: auto;
+    z-index: 100;
+    background-color: rgba(40, 107, 158, 0.411);
+    margin: 0;
+    display: none;
+}
