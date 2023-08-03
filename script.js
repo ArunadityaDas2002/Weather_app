@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const airDetailsContainer = document.querySelector(".extra-details-container");
     const cityInput = document.getElementById("city");
     const submitButton = document.getElementById("submit");
+    const alert = document.getElementById("alert");
+    const loader = document.getElementById("loader");
+    function loading(){
+      loader.style.display = "block";
+      alert.style.display = "none";
+    }
   
     // Function to display weather data
     function displayWeatherData(data) {
@@ -19,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("wind_degrees").innerHTML = "wind_degrees &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + data.wind_degrees+ " km/hr";
   
       weatherDetailsContainer.style.display = "block";
+      alert.style.display = "none";
+      loader.style.display = "none";
     }
   
     // Function to fetch weather data
@@ -91,18 +99,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    
-  
+
     // Event listener for search form submission
     submitButton.addEventListener("click", (e) => {
       e.preventDefault();
       const city = cityInput.value.trim();
       if (city !== "") {
-        
+        // alert("Search for a city first");
+        loading();
         fetchWeatherData(city);
         fetchAirQuality(city);
       }
     });
+
   });
       
 
