@@ -121,7 +121,7 @@ html,body{
     scale: 0.5;
   }
 
-  #loader {
+/*   #loader {
     position: absolute;
     top: 310px;
     left: 670px;
@@ -131,4 +131,4 @@ html,body{
     background-color: rgba(40, 107, 158, 0.411);
     margin: 0;
     display: none;
-}
+} */
