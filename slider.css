@@ -105,3 +105,29 @@ html,body{
     font-size: 40px;
     color: #04187e;
   }
+  #alert{
+    position: absolute;
+    top: 365px;
+    left: 392px;
+    font-size: 80px;
+    color: red;
+    background-color: black;
+    width: 751px;
+    height: 117px;
+    z-index: 50;
+    text-align: center;
+    opacity: 0.2;
+    scale: 0.5;
+  }
+
+  #loader {
+    position: absolute;
+    top: 310px;
+    left: 670px;
+    width: auto;
+    height: auto;
+    z-index: 100;
+    background-color: rgba(40, 107, 158, 0.411);
+    margin: 0;
+    display: none;
+}
