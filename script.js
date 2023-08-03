@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submit");
     const alert = document.getElementById("alert");
     const loader = document.getElementById("loader");
-    function loading(){
-      loader.style.display = "block";
-      alert.style.display = "none";
-    }
+    // function loading(){
+    //   loader.style.display = "block";
+    //   alert.style.display = "none";
+    // }
   
     // Function to display weather data
     function displayWeatherData(data) {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       weatherDetailsContainer.style.display = "block";
       alert.style.display = "none";
-      loader.style.display = "none";
+      // loader.style.display = "none";
     }
   
     // Function to fetch weather data
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const city = cityInput.value.trim();
       if (city !== "") {
         // alert("Search for a city first");
-        loading();
+        // loading();
         fetchWeatherData(city);
         fetchAirQuality(city);
       }
